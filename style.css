@@ -109,3 +109,9 @@ button {
     font-size: 32px;
     font-weight: 400;
 }
+
+.container__imagen-persona {
+   
+    height: 40%;
+    width: 40%;
+}

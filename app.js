@@ -27,6 +27,7 @@ function verificarIntento() {
         intentos++;
         limpiarCaja();
     }
+    document.getElementById("boton-intento").setAttribute('disabled','true')
     return;
 }
 
@@ -59,6 +60,7 @@ function condicionesIniciales() {
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
     console.log(numeroSecreto);
+    
 }
 
 function reiniciarJuego() {
@@ -72,5 +74,10 @@ function reiniciarJuego() {
     document.querySelector('#reiniciar').setAttribute('disabled','true');
     
 }
+
+function habilitarBoton() {
+    document.getElementById("boton-intento").removeAttribute('disabled');
+}
+
 
 condicionesIniciales();
